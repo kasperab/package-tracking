@@ -1,0 +1,38 @@
+{
+    "en": {
+        "label": "English",
+        "title": "Package Tracking",
+        "parcel_id": "Parcel ID",
+        "sender": "Sender",
+        "status": "Status",
+        "eta": "Estimated Delivery",
+        "verification_required": "Requires Verification",
+        "location_name": "Location",
+        "notes": "Notes",
+        "last_updated": "Last Updated",
+        "order-info-received": "Order info received",
+        "on-the-way": "On the way",
+        "ready-for-pickup": "Ready for pickup",
+        "delivered": "Delivered",
+        "yes": "Yes",
+        "no": "No"
+    },
+    "sv": {
+        "label": "Svenska",
+        "title": "Paketspårning",
+        "parcel_id": "Paket ID",
+        "sender": "Avsändare",
+        "status": "Status",
+        "eta": "Beräknad Leverans",
+        "verification_required": "Kräver Verifiering",
+        "location_name": "Plats",
+        "notes": "Anteckningar",
+        "last_updated": "Senast Uppdaterad",
+        "order-info-received": "Beställning mottagen",
+        "on-the-way": "På väg",
+        "ready-for-pickup": "Klar att hämtas",
+        "delivered": "Levererad",
+        "yes": "Ja",
+        "no": "Nej"
+    }
+}

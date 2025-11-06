@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function TrackingData() {
+export default function TrackingData({ text }) {
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -16,14 +16,14 @@ export default function TrackingData() {
                 <table>
                     <thead>
                         <tr>
-                            <th>Parcel ID</th>
-                            <th>Sender</th>
-                            <th>Status</th>
-                            <th>Estimated Delivery</th>
-                            <th>Requires Verification</th>
-                            <th>Location</th>
-                            <th>Notes</th>
-                            <th>Last Updated</th>
+                            <th>{text.parcel_id}</th>
+                            <th>{text.sender}</th>
+                            <th>{text.status}</th>
+                            <th>{text.eta}</th>
+                            <th>{text.verification_required}</th>
+                            <th>{text.location_name}</th>
+                            <th>{text.notes}</th>
+                            <th>{text.last_updated}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,9 +34,9 @@ export default function TrackingData() {
                                 <tr>
                                     <td>{item.parcel_id}</td>
                                     <td>{item.sender}</td>
-                                    <td>{item.status}</td>
+                                    <td>{text[item.status]}</td>
                                     <td>{eta.toLocaleDateString()} <br /> {eta.toLocaleTimeString()}</td>
-                                    <td>{item.verification_required ? "Yes" : "No"}</td>
+                                    <td>{item.verification_required ? text.yes : text.no}</td>
                                     <td>{item.location_name}</td>
                                     <td>{item.notes}</td>
                                     <td>{updated.toLocaleDateString()} <br /> {updated.toLocaleTimeString()}</td>
