@@ -12,6 +12,25 @@
 header {
   text-align: center;
   margin-bottom: 32px;
+  padding: 32px;
+  background-color: #4C3D3D;
+}
+
+h1 {
+  font-size: 40px;
+  color: #FFD95A;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #FFF7D4;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  color: #4C3D3D;
 }
 
 .dataTable {
@@ -23,25 +42,26 @@ table {
 }
 
 th {
-  color: white;
-  background-color: black;
-  border-right: 1px solid white;
+  color: #FFF7D4;
+  background-color: #4C3D3D;
+  border-right: 1px solid #FFF7D4;
 }
 
 tr {
-  background-color: lightgray;
+  background-color: #FFD95A;
 }
 
 tr:nth-of-type(even) {
-  background-color: lightyellow;
+  background-color: #FFF7D4;
 }
 
 td {
-  border-right: 1px solid lightyellow;
+  border-right: 1px solid #FFF7D4;
+  color: #4C3D3D;
 }
 
 tr:nth-of-type(even) td {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #FFD95A;
 }
 
 tr th:last-child, tr td:last-child {
@@ -49,5 +69,6 @@ tr th:last-child, tr td:last-child {
 }
 
 th, td {
-  padding: 4px;
+  font-size: 16px;
+  padding: 8px;
 }
